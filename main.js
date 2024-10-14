@@ -18,5 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active');
         });
     });
-});
 
+    // Show the home section by default
+    showSection('home');
+});
