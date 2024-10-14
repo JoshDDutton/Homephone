@@ -203,6 +203,10 @@ p {
     color: #FF5500;
 }
 
+.fa-youtube {
+    color: #FF0000;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
