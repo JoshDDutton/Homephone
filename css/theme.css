@@ -2,50 +2,28 @@
 :root {
     --primary-color: #bb86fc;
     --secondary-color: #03dac6;
-    --text-color: #333;
+    --text-color: #ffffff;
     --background-color: #121212;
-    --surface-color: #ffffff;
+    --surface-color: #1e1e1e;
 }
 
 body {
     background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .content-container {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: var(--surface-color);
+    border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* Keep text dark in main content area */
-main {
-    color: #333;
-}
-
-main h2, main h3 {
-    color: #333;
-}
-
-main p {
-    color: #444;
-}
-
-/* Keep nav, header, and footer dark */
-nav {
-    background-color: #444;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
+nav ul {
+    background-color: var(--surface-color);
 }
 
 nav a {
-    color: #fff;
+    color: var(--text-color);
 }
 
 nav a:hover {
@@ -54,7 +32,6 @@ nav a:hover {
 
 .music-links a {
     background-color: var(--primary-color);
-    color: #fff;
 }
 
 .music-links a:hover {
@@ -72,14 +49,13 @@ nav a:hover {
 
 #theme-toggle-btn {
     background-color: var(--primary-color);
-    color: #fff;
 }
 
 #theme-toggle-btn:hover {
     background-color: var(--secondary-color);
 }
 
-/* Dark overlay for background */
+/* Add a dark overlay to the background container */
 .background-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background1.jpg');
 } 
