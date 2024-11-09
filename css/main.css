@@ -102,12 +102,20 @@ nav ul li a {
     display: block;
     padding: 0.5rem;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    background-color: #333;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    background-color: #555;
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* When in dark theme, adjust hover state */
+body.dark-theme nav ul li a:hover,
+body.dark-theme nav ul li a.active {
+    background-color: var(--secondary-color);
 }
 
 /* Main Content */
