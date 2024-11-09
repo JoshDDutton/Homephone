@@ -57,5 +57,5 @@ nav a:hover {
 
 /* Add a dark overlay to the background container */
 .background-container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/homephone1.jpg');
 } 
