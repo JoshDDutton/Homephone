@@ -70,9 +70,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 1rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .profile-banner {
@@ -80,21 +81,22 @@ header {
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    margin-right: 1rem;
 }
 
-/* Navigation - Updated for horizontal layout */
+h1 {
+    margin-right: auto; /* Push nav to the right */
+}
+
+/* Navigation */
 nav {
-    grid-area: unset; /* Remove from grid */
-    background-color: transparent; /* Remove background since it's in header */
-    padding: 0;
+    margin-left: auto; /* Push nav to the right */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     gap: 1rem;
-    margin: 0;
+    align-items: center;
 }
 
 nav ul li {
