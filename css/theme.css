@@ -1,0 +1,56 @@
+/* Dark Theme */
+:root {
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --text-color: #ffffff;
+    --background-color: #121212;
+    --surface-color: #1e1e1e;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.content-container {
+    background-color: var(--surface-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    background-color: var(--surface-color);
+}
+
+nav a {
+    color: var(--text-color);
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+}
+
+.music-links a {
+    background-color: var(--primary-color);
+}
+
+.music-links a:hover {
+    background-color: var(--secondary-color);
+}
+
+.gallery-image {
+    filter: brightness(0.8);
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.gallery-image:hover {
+    filter: brightness(1);
+}
+
+#theme-toggle-btn {
+    background-color: var(--primary-color);
+}
+
+#theme-toggle-btn:hover {
+    background-color: var(--secondary-color);
+} 

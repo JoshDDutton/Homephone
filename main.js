@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('main section');
+    const themeToggle = document.getElementById('theme-toggle-btn');
+    const themeStylesheet = document.getElementById('theme-stylesheet');
 
     function showSection(sectionId) {
         sections.forEach(section => {
@@ -21,4 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Show the home section by default
     showSection('home');
+
+    themeToggle.addEventListener('click', function() {
+        if (themeStylesheet.disabled) {
+            themeStylesheet.disabled = false;
+            themeToggle.textContent = 'Toggle Light Theme';
+        } else {
+            themeStylesheet.disabled = true;
+            themeToggle.textContent = 'Toggle Dark Theme';
+        }
+    });
 });
