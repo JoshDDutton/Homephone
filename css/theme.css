@@ -2,28 +2,36 @@
 :root {
     --primary-color: #bb86fc;
     --secondary-color: #03dac6;
-    --text-color: #ffffff;
+    --text-color: #333;
     --background-color: #121212;
-    --surface-color: #1e1e1e;
+    --surface-color: #ffffff;
 }
 
 body {
     background-color: var(--background-color);
-    color: var(--text-color);
 }
 
 .content-container {
-    background-color: var(--surface-color);
-    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-nav ul {
-    background-color: var(--surface-color);
+nav {
+    background-color: #444;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
 }
 
 nav a {
-    color: var(--text-color);
+    color: #fff;
 }
 
 nav a:hover {
@@ -32,6 +40,7 @@ nav a:hover {
 
 .music-links a {
     background-color: var(--primary-color);
+    color: #fff;
 }
 
 .music-links a:hover {
@@ -49,8 +58,13 @@ nav a:hover {
 
 #theme-toggle-btn {
     background-color: var(--primary-color);
+    color: #fff;
 }
 
 #theme-toggle-btn:hover {
     background-color: var(--secondary-color);
+}
+
+.background-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background1.jpg');
 } 
