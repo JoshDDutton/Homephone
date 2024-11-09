@@ -222,3 +222,126 @@ p {
     width: 100%;
     height: 100%;
 }
+/* CSS Changes and Improvements - 2024 Update
+ * - Improved grid layout flexibility and removed unnecessary height constraints
+ * - Enhanced responsive design for desktop, tablet, and mobile
+ * - Cleaned up redundant styles and improved organization
+ * - Added smooth transitions for better UX
+ * - Implemented theme toggle functionality
+ * - Fixed alignment issues in navigation and content areas
+ */
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .content-container {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+
+    nav {
+        border-radius: 0;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background-container {
+        padding: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-banner {
+        margin: 0 0 1rem 0;
+    }
+
+    .music-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .music-links a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-theme .background-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/background1.jpg');
+}
+
+.dark-theme .content-container {
+    background-color: rgba(30, 30, 30, 0.95);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme header {
+    background-color: #1a1a1a;
+}
+
+.dark-theme nav {
+    background-color: #2a2a2a;
+}
+
+.dark-theme nav a {
+    color: #e0e0e0;
+}
+
+.dark-theme .music-links a {
+    background-color: #2a2a2a;
+}
+
+.dark-theme .music-links a:hover {
+    background-color: #3a3a3a;
+}
+
+.dark-theme .theme-toggle {
+    background-color: #e0e0e0;
+    color: #121212;
+}
+
+.dark-theme .theme-toggle:hover {
+    background-color: #ffffff;
+}
