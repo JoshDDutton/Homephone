@@ -55,7 +55,7 @@ nav a:hover {
     background-color: var(--secondary-color);
 }
 
-/* Add a dark overlay to the background container */
+
 .background-container {
     background-image: url('../img/homephone1.jpg');
 } 
