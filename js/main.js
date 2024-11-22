@@ -1,10 +1,11 @@
 /*
-Project 4 JavaScript Changes:
-- Split JavaScript into modular files
-- Added proper documentation and headers
-- Improved code organization
-- Implemented proper event handling
-- Added form validation
+Project 5 JavaScript Changes:
+- Added visitor registration form functionality
+- Implemented comprehensive form validation
+- Enhanced modular code organization
+- Added proper error handling and display
+- Improved user feedback with validation states
+- Maintained existing page and theme functionality
 
 Disclaimer: This code was written by [Your Name]. 
 All functionality was implemented independently without copying from external sources.
@@ -35,6 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('main section');
     const themeToggle = document.getElementById('theme-toggle-btn');
     const themeStylesheet = document.getElementById('theme-stylesheet');
+
+    // Initialize form validation
+    initValidation('#visitorForm');
 
     // Set up navigation
     navLinks.forEach(link => {

@@ -24,6 +24,7 @@
                         <li><a href="#music">Music</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#videos">Videos</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -91,6 +92,96 @@
                         <a href="https://www.youtube.com/@Homephone-jp5dx" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-youtube"></i> Stay on the line for more Homephone
                         </a>
+                    </div>
+                </section>
+
+                <!-- Contact Us Page -->
+                <section id="contact" style="display: none;">
+                    <h2>Contact Us</h2>
+                    <form id="visitorForm" novalidate>
+                        <div class="form-section">
+                            <h3>Personal Information</h3>
+                            <div class="form-group">
+                                <label for="firstName">First Name*</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <div class="errorMsg"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name*</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <div class="errorMsg"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address*</label>
+                                <input type="text" id="address" name="address" required>
+                                <div class="errorMsg"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City*</label>
+                                    <input type="text" id="city" name="city" required>
+                                    <div class="errorMsg"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State*</label>
+                                    <input type="text" id="state" name="state" maxlength="2" required>
+                                    <div class="errorMsg"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">ZIP Code*</label>
+                                    <input type="text" id="zip" name="zip" required>
+                                    <div class="errorMsg"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Cell Phone*</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <div class="errorMsg"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="errorMsg"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>How did you find us?*</h3>
+                            <div class="checkbox-group" id="findUs">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="internet" name="findUs" value="internet">
+                                    <label for="internet">Internet</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="friend" name="findUs" value="friend">
+                                    <label for="friend">Friend</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="google" name="findUs" value="google">
+                                    <label for="google">Google</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="other" name="findUs" value="other">
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+                            <div class="errorMsg" id="findUs-error"></div>
+                        </div>
+
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="comments">Comments</label>
+                                <textarea id="comments" name="comments" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" id="submitBtn">Submit</button>
+                        </div>
+                    </form>
+                    <div id="thankYouMessage" style="display: none;">
+                        <h3>Thank you for your submission!</h3>
+                        <p>We'll get back to you soon.</p>
                     </div>
                 </section>
             </main>
