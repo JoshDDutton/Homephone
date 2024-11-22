@@ -6,9 +6,6 @@ Project 5 JavaScript Changes:
 - Added proper error handling and display
 - Improved user feedback with validation states
 - Maintained existing page and theme functionality
-
-Disclaimer: This code was written by [Your Name]. 
-All functionality was implemented independently without copying from external sources.
 */
 
 // Page handling functionality

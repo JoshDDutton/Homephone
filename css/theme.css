@@ -58,4 +58,48 @@ nav a:hover {
 
 .background-container {
     background-image: url('../img/homephone1.jpg');
+}
+
+/* Form Theme Styles */
+.form-section {
+    background-color: var(--surface-color);
+}
+
+.form-group label {
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.checkbox-item {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+}
+
+.checkbox-item:hover {
+    background-color: var(--primary-color);
+}
+
+#submitBtn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+#submitBtn:hover {
+    background-color: var(--secondary-color);
+}
+
+#thankYouMessage {
+    background-color: var(--surface-color);
+    color: var(--text-color);
 } 
